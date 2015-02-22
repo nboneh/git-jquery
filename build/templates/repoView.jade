@@ -1,1 +1,30 @@
-h5= item.full_name
+h4 #{item.name} by #{item.owner.login} 
+h5 Description 
+p #{item.description}
+
+h5 Info
+p ID: #{item.id}
+	br
+	| Size: #{item.size}
+	br
+	| Forks: #{item.forks}
+	br
+	| Created at: #{item.created_at}
+	br
+	| Updated at: #{item.updated_at}
+	br
+	| Pushed at: #{item.pushed_at}
+	br
+	| Ownder id: #{item.owner.id}
+	br
+	| Private: #{item.private}
+	br
+	| Url: #{item.url}
+	br
+	| Html_Url: #{item.html_url}
+	br
+	| Number of watchers: #{item.watchers_count}
+	br
+	| Number of forks: #{item.forks_count} 
+	br
+	| Default Branch: #{item.default_branch}

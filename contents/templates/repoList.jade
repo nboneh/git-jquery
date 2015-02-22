@@ -1,8 +1,15 @@
 each item in items
-    div.row 
-        div.six.columns
-            a(href="#", onClick='repoView("' + item.full_name + '")')
-                = item.full_name
-        div.six.columns
-            = item.open_issues
-            |  issues
+	div.row 
+		div.six.columns
+			a(href="#", onClick='repoView("' + item.full_name + '")')
+				= item.full_name
+		div.six.columns
+			p Issues: #{item.open_issues}
+	div.row
+		div.six.columns
+			p Size: #{item.size}
+		div.six.columns
+			p Id: #{item.id}
+	div.row
+		div.ten.columns
+			p Private: #{item.private}
